@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#nav{
+    background-color: gainsboro;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(67, 67, 212);
+}
+#nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+a{
+    transition: all .3s;
+}
+a:hover {
+    scale: 1.2;
+    
+}
