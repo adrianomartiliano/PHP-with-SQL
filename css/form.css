@@ -1,0 +1,13 @@
+form{
+    width: 600px;
+    display:grid;
+}
+input {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+#titulo, #autor{
+    width: 400px;
+}
