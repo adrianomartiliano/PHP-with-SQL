@@ -1,5 +1,8 @@
-
-#lista-livro ul{
+.lista-livros{
+    max-width: 800px;
+    margin: 20px auto;
+}
+/* #lista-livro ul{
     display: flex;
     width: 600px;
     padding: 5px;
@@ -44,4 +47,4 @@ input {
 .linha-lista{
     border-radius: 10px;
     border: 1px solid gray;
-}
+} */

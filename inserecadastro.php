@@ -12,8 +12,13 @@
 
         $resultado = mysqli_query($conectar, "INSERT INTO livros
         VALUES ( default, '$titulo', '$autor', '$qtd_paginas', '$editora', $ano)");
-        echo '<script>alert("Sucesso")</script>';            
-        echo "<META HTTP-EQUIV='Refresh' CONTENT='1 ; URL= index.php'>";   
+        if($resultado == true){
+            echo '<script>alert("Sucesso")</script>'; 
+            echo "<script>location.href='index.php'</script>";   
+        }else {
+            echo '<script>alert("Erro ao salvar")</script>'; 
+            echo "<script>location.href='index.php'</script>";  
+        }   
     }   
 
 ?>
