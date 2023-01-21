@@ -9,29 +9,27 @@ $sql = mysqli_query($conectar, "SELECT * FROM livros ORDER BY titulo") or die(
   );
 ?>
 
-<link rel="stylesheet" href="css/livros.css">
+<!-- <link rel="stylesheet" href="css/livros.css"> -->
 
-<div id="lista-livro">
-    <!-- <ul class="ul-linha">
-        <li>ID</li><li>Título</li><li>Autor</li>
-    </ul> -->
+<table class='table table-striped'>
+    <tr >
+        <th>ID</th><th>Título</th><th colspan='3'>Autor</th>
+    <tr>
     <?php
-    //pecorrendo os registros da consulta. 
+    //pecorrendo os registros da consulta. s
         while($aux = mysqli_fetch_assoc($sql)) {  
             echo "
-                <ul class='linha-lista'>
-                    <li>" .$aux["id"]. "</li>
-                    <li id='titulo-livro'>" .$aux["titulo"]. "</li>
-                    <li id='autor-livro'>" .$aux["autor"]. "</li>
-                    <form method='post'>
-                        <input type='submit' id='btn-editar' value='Editar' name='editar'>
-                        <input id='btn-excluir'  type='submit' value='Excluir' name='excluir'>
-                    </form>
-                </ul>"; 
+                <tr class='linha-lista'>
+                    <td>" .$aux["id"]. "</td>
+                    <td id='titulo-livro'>" .$aux["titulo"]. "</td>
+                    <td id='autor-livro'>" .$aux["autor"]. "</td>
+                    <td><button type='button' class='btn btn-primary'>Editar</button></td>
+                    <td><button type='button' class='btn btn-danger'>Excluir</button></td>
+                </tr>"; 
         }  
         if(isset($_POST['excluir'])){
             // $excluindo = mysqli_query($conectar, "DELETE FROM livros WHERE id='$aux[id]'");
             // echo "<META HTTP-EQUIV='Refresh' CONTENT='1 ; URL= index.php'>";
         }
     ?>
-</div>
+</table>
