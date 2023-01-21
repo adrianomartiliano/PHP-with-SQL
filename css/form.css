@@ -1,13 +1,13 @@
 form{
-    width: 600px;
-    display:grid;
+    margin: 0 auto;
+    max-width: 400px;
 }
-input {
-    margin: 5px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid gray;
+form div{
+    display: flex;
+    margin: 10px;
 }
-#titulo, #autor{
-    width: 400px;
+#btn-salvar-form{
+    width: 200px;
+    margin: 0 auto;
 }
+
