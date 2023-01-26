@@ -12,7 +12,7 @@
     echo "
 
         <form action='editacadastro.php' method='post'>
-        <input type='radio' value='". $id ."' name='id' checked >
+        <input type='radio' value='". $id ."' name='id' checked style='display:none;'>
         <div class='form-floating campus-form' >
             <input value='". $livro[1] ."' type='text' placeholder='Título' name='titulo' class='form-control' required >
             <label for='floatingInput'>Título</label>
