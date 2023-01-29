@@ -18,11 +18,10 @@ $sql = mysqli_query($conectar, "SELECT * FROM livros ORDER BY titulo");
                      <td>" .$livro->id. "</td>
                      <td id='titulo-livro'>" .$livro->titulo. "</td>
                      <td id='autor-livro'>" .$livro->autor. "</td>
-                     <form method='GET'>
-                        <td><a href='edita.php?id=". $livro->id ."' class='btn btn-primary'>Editar</a></td>
-                     </form>
-                    <td><button type='button' class='btn btn-danger'>Excluir</button></td>
+                     <td><a href='edita.php?id=". $livro->id ."' class='btn btn-primary'>Editar</a></td>
+                    <td><a href='excluir.php?id=". $livro->id ."' class='btn btn-danger'>Excluir</a></td>
                 </tr>";
         }
     ?>
 </table>
+
