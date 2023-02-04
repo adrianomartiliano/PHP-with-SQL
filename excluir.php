@@ -20,6 +20,6 @@ function teste(){
   <div class="card-body">
     <p class="card-text">Excluir o livro "<?php echo $livro[1]; ?>"?</p>
     <a href="index.php" class="btn btn-secondary">Voltar</a>
-    <a href=" <?php teste(); ?> " class="btn btn-danger">Excluir</a>
+    <a href="excluido.php?id=<?php echo $livro[0]; ?>" class="btn btn-danger">Excluir</a>
   </div>
 </div>
