@@ -4,7 +4,7 @@ require_once 'conexao.php';
 require_once 'menu.html';
 
 $id = $_GET['id'];
-$excluir = mysqli_query($conectar, "SELECT * FROM livros WHERE id=$id");
+$excluir = mysqli_query($conectar, "SELECT * FROM livro WHERE id=$id");
 $livro = $excluir->fetch_row();
 
 function teste(){

@@ -6,7 +6,7 @@
     require_once 'menu.html';
 
     $id = $_GET['id'];
-    $edita = mysqli_query($conectar, "SELECT * FROM livros WHERE id=$id");
+    $edita = mysqli_query($conectar, "SELECT * FROM livro WHERE id=$id");
     $livro = $edita->fetch_row();
     
     echo "

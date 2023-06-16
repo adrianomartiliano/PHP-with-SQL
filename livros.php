@@ -1,7 +1,7 @@
 <?php
 require_once 'conexao.php';
 
-$sql = mysqli_query($conectar, "SELECT * FROM livros ORDER BY titulo");
+$sql = mysqli_query($conectar, "SELECT * FROM livro ORDER BY titulo");
 
 ?>
 

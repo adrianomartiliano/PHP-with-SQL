@@ -8,10 +8,10 @@
         $autor = $_POST['autor'];
         $qtd_paginas = $_POST['qtd_paginas'];
         $editora = $_POST['editora'];
-        $ano = $_POST['ano'];
+        $ano = $_POST['ano_lancamento'];
 
-        $resultado = mysqli_query($conectar, "INSERT INTO livros
-        VALUES ( default, '$titulo', '$autor', '$qtd_paginas', '$editora', $ano)");
+        $resultado = mysqli_query($conectar, "INSERT INTO livro
+        VALUES ( default, '$titulo', '$autor', '$editora','$qtd_paginas', '$ano')");
         if($resultado == true){
             echo '<script>alert("Sucesso")</script>'; 
             echo "<script>location.href='index.php'</script>";   

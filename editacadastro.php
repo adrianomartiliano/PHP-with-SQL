@@ -9,10 +9,9 @@
         $autor = $_POST['autor'];
         $qtd_paginas = $_POST['qtd_paginas'];
         $editora = $_POST['editora'];
-        $ano = $_POST['ano'];
+        $ano = $_POST['ano_lancamento'];
 
-        $resultado = mysqli_query($conectar, "UPDATE livros SET titulo='$titulo', autor='$autor', quantidada_paginas='$qtd_paginas',
-        editora='$editora', ano_lancamento='$ano' WHERE id=$id");
+        $resultado = mysqli_query($conectar, "UPDATE livro SET default, titulo='$titulo', autor='$autor', editora='$editora', qtd_paginas='$qtd_paginas', ano_lancamento='$ano' WHERE id=$id");
         if($resultado == true){
             echo '<script>alert("Sucesso")</script>'; 
             echo "<script>location.href='index.php'</script>";   

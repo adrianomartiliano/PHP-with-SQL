@@ -4,7 +4,7 @@
     
     $id = $_GET['id'];
 
-    $resultado = mysqli_query($conectar, "DELETE FROM livros WHERE id=$id");
+    $resultado = mysqli_query($conectar, "DELETE FROM livro WHERE id=$id");
 
     if($resultado == true){
         echo '<script>alert("EXCLUÍDO!")</script>'; 
