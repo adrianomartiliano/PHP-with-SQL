@@ -34,8 +34,8 @@
             <label for='floatingInput'>Ano de Lançamento</label>
         </div>
         <div id='btn-salvar-form'>
-            <input type='submit' name='submit' value='Salvar' class='form-control btn btn-success' >
-            <a href='index.php' class='form-control btn btn-secondary' >Voltar</a>
+            <input type='submit' name='submit' value='Salvar' class='form-control btn btn-success btn-edita' >
+            <a href='index.php' class='form-control btn btn-secondary btn-edita' >Voltar</a>
         </div>
         
     </form>
